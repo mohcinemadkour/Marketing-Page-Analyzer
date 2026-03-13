@@ -1,0 +1,4 @@
+# claude-mark2 — Dépendances Python
+# Dépendances de base (aucune librairie externe requise — les scripts utilisent la stdlib)
+# Optionnel (pour les fonctionnalités avancées) :
+reportlab>=4.0        # Génération de rapports PDF
