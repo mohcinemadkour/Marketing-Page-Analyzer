@@ -1,8 +1,8 @@
-# claude-mark2 — Suite Marketing IA en Français pour Claude Code
+# claude-mark2 — AI Marketing Suite for Claude Code
 
-Une suite complète de skills, agents et scripts marketing entièrement en français, conçue pour Claude Code.
+A complete suite of marketing skills, agents, and scripts designed for Claude Code.
 
-## Installation rapide
+## Quick Install
 
 ```bash
 git clone https://github.com/mounra/ai-marketing.git
@@ -10,172 +10,189 @@ cd ai-marketing
 bash install.sh
 ```
 
-Ou en une commande depuis n'importe où :
+Or in a single command from anywhere:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/mounra/ai-marketing/main/install.sh | bash
 ```
 
-## Ce qui est installé
+## What Gets Installed
 
-| Composant | Quantité | Description |
-|-----------|----------|-------------|
-| Skills | 15 | Commandes slash pour chaque tâche marketing |
-| Agents | 5 | Sous-agents spécialisés pour l'audit complet |
-| Scripts | 4 | Scripts Python d'analyse et de génération |
-| Modèles | 4 | Templates prêts à l'emploi |
+| Component | Count | Description |
+|-----------|-------|-------------|
+| Skills | 15 | Slash commands for every marketing task |
+| Agents | 5 | Specialized sub-agents for full audits |
+| Scripts | 4 | Python scripts for analysis and generation |
+| Templates | 4 | Ready-to-use document templates |
 
-## Commandes disponibles
-
-```
-/market audit <url>        Audit marketing complet (5 agents parallèles)
-/market quick <url>        Aperçu marketing en 60 secondes
-/market copy <url>         Générer du texte optimisé
-/market emails <sujet>     Générer des séquences d'emails
-/market social <sujet>     Calendrier de contenu réseaux sociaux
-/market ads <url>          Créatifs et textes publicitaires
-/market funnel <url>       Analyse du tunnel de vente
-/market competitors <url>  Intelligence concurrentielle
-/market landing <url>      CRO de page d'atterrissage
-/market launch <produit>   Plan de lancement produit
-/market proposal <client>  Générateur de proposition commerciale
-/market report <url>       Rapport marketing complet (Markdown)
-/market report-pdf <url>   Rapport marketing complet (PDF)
-/market seo <url>          Audit SEO de contenu
-/market brand <url>        Analyse la marque
+## Available Commands
 
 ```
-## Détail des commandes 
+/market audit <url>        Full marketing audit (5 parallel agents)
+/market quick <url>        60-second marketing snapshot
+/market copy <url>         Generate optimized copywriting
+/market emails <topic>     Generate email sequences
+/market social <topic>     Social media content calendar
+/market ads <url>          Ad creatives and copy
+/market funnel <url>       Sales funnel analysis
+/market competitors <url>  Competitive intelligence
+/market landing <url>      Landing page CRO analysis
+/market launch <product>   Product launch plan
+/market proposal <client>  Commercial proposal generator
+/market report <url>       Full marketing report (Markdown)
+/market report-pdf <url>   Full marketing report (PDF)
+/market seo <url>          SEO content audit
+/market brand <url>        Brand voice analysis
+```
 
-Voici l'explication des 15 commandes de la suite marketing, complétement réécrite avec des cas d'usage concrets pour une boutique e-commerce qui vend des produits physiques (comme des vêtements, des cosmétiques, de l'électronique, des accessoires, etc.).
+## Command Details
 
-1. La Commande Maîtresse (L'Audit Global)
-/market audit <url>
+### 1. Master Audit Commands
 
-À quoi ça sert : C'est un scanner complet de votre boutique en ligne. Il analyse tout : le parcours d'achat, le SEO, le design, et la confiance.
-Cas d'usage E-commerce : Avant de dépenser des milliers d'euros en publicités Facebook pour le Black Friday, vous lancez cette commande sur l'URL de votre boutique. Elle vous dira : "Attention, il manque des avis clients visibles sur vos fiches produits" ou "Le bouton 'Ajouter au panier' n'est pas assez visible sur la version mobile".
-/market quick <url>
+**`/market audit <url>`**
+A complete scanner for your website. Analyzes everything: the buying journey, SEO, design, and trust signals using 5 AI agents running in parallel.
+> *E-commerce example: Before spending thousands on Black Friday Facebook ads, run this on your store URL. It will flag: "Customer reviews are missing on product pages" or "The Add to Cart button isn't visible enough on mobile."*
 
-À quoi ça sert : La version flash de l'audit (analyse de la page d'accueil d'un coup d'œil).
-Cas d'usage E-commerce : Vous venez de changer la bannière de votre page d'accueil avec une nouvelle promotion. Vous lancez la commande pour vérifier si l'offre (ex: "-20% sur la collection d'été") est bien compréhensible en moins de 3 secondes par un visiteur.
+**`/market quick <url>`**
+The flash version of the audit — homepage analysis at a glance.
+> *E-commerce example: You just updated your homepage banner with a new promotion. Run this to check if the offer ("-20% on the summer collection") is understandable within 3 seconds.*
 
-2. Le Tunnel de Vente et la Conversion
-/market funnel <url>
+### 2. Sales Funnel & Conversion
 
-À quoi ça sert : Analyser le parcours du client, du clic sur la pub jusqu'à la page de paiement.
-Cas d'usage E-commerce : Vous avez 10 000 visiteurs par mois, mais seulement 50 ventes. Vous lancez cette commande pour trouver d'où vient le problème. Elle vous révèlera par exemple que le "goulot d'étranglement" se trouve à l'étape des frais de port (panier abandonné à cause de frais trop élevés ou découverts trop tard).
-/market landing <url>
+**`/market funnel <url>`**
+Analyze the customer journey from ad click to checkout.
+> *E-commerce example: You have 10,000 visitors/month but only 50 sales. This command finds where the drop-off occurs — e.g. customers abandoning at the shipping cost step.*
 
-À quoi ça sert : Optimiser une page spécifique pour qu'elle vende mieux.
-Cas d'usage E-commerce : Vous avez créé une page de vente dédiée pour votre produit "Best-Seller" (ex: un sérum anti-âge). La commande va analyser la page produit spécifique et vous dire d'ajouter des photos "Avant/Après", de remonter les bénéfices au-dessus du prix, et de créer de l'urgence.
+**`/market landing <url>`**
+Optimize a specific page to convert better.
+> *E-commerce example: Your best-seller product page gets traffic but poor conversion. The command tells you to add Before/After photos, move benefits above the price, and add urgency signals.*
 
-3. Fiches Produits et Rédaction
-/market copy <url>
+### 3. Content & Copywriting
 
-À quoi ça sert : Réécrire des textes ennuyeux pour en faire des textes qui font vendre.
-Cas d'usage E-commerce : Au lieu d'écrire "T-shirt 100% coton, col rond, noir", la commande va transformer la description de votre fiche produit en se basant sur les bénéfices clients : "Le T-shirt noir parfait qui ne rétrécit pas au lavage et met votre carrure en valeur".
-/market brand <url>
+**`/market copy <url>`**
+Rewrite bland product descriptions into persuasive copy.
+> *E-commerce example: Transforms "100% cotton T-shirt, round neck, black" into "The perfect black tee that won't shrink in the wash and flatters your frame."*
 
-À quoi ça sert : Définir le ton de votre marque pour avoir une image cohérente.
-Cas d'usage E-commerce : Si vous vendez des montres de luxe, vous ne parlez pas aux clients de la même manière que si vous vendez des produits de beauté éco-responsables ciblés pour la génération Z. Cette commande crée votre "bible de marque" (le vocabulaire exact à utiliser sur le site et les réseaux sociaux).
-/market seo <url>
+**`/market brand <url>`**
+Define your brand tone for consistent communication.
+> *E-commerce example: Creates your brand bible — the exact vocabulary to use across your site and social channels, tailored to your audience.*
 
-À quoi ça sert : Optimiser les fiches produits et les collections pour ressortir sur Google.
-Cas d'usage E-commerce : Vous lancez une nouvelle gamme de "sacs à dos imperméables". La commande va analyser votre page de collection et vérifier si vous utilisez les bons mots-clés dans les titres (H1, H2), les balises alt des images, et la description, pour attirer du trafic gratuit.
+**`/market seo <url>`**
+Optimize product pages and collections for Google rankings.
+> *E-commerce example: Launching a "waterproof backpack" range? This checks if you're using the right keywords in H1/H2 headings, image alt text, and descriptions.*
 
-4. Acquisition (Publicité et Réseaux)
-/market ads <url>
+### 4. Advertising & Social Media
 
-À quoi ça sert : Générer les textes (copywriting) et les idées d'images ou vidéos pour vos publicités payantes.
-Cas d'usage E-commerce : Vous avez un budget pour des publicités TikTok ou Instagram (Meta Ads). Vous fournissez le lien de votre produit star à la commande, et elle vous écrit 3 scripts de vidéos courtes (ex: format "Unboxing", format "Problème/Solution", format "Témoignage UGC") prêts à être tournés.
-/market social <sujet/url>
+**`/market ads <url>`**
+Generate ad copy and video script ideas for paid campaigns.
+> *E-commerce example: Provide your hero product link and get 3 short-video scripts (Unboxing, Problem/Solution, UGC Testimonial) ready to shoot for TikTok or Meta Ads.*
 
-À quoi ça sert : Créer le planning complet de vos posts sur Instagram, TikTok, Pinterest, etc.
-Cas d'usage E-commerce : Vous n'avez pas d'idées de publications pour Décembre. La commande vous planifie 1 mois de contenu : "Lundi : Montrer comment utiliser le produit en hiver", "Mercredi : Preuve sociale avec l'avis de Sophie", "Vendredi : Focus sur notre packaging écologique idéal pour offrir".
-/market competitors <url>
+**`/market social <topic/url>`**
+Build a complete posting plan for Instagram, TikTok, LinkedIn, etc.
+> *E-commerce example: No content ideas for December? Get a full month planned: "Monday: How to use the product in winter", "Wednesday: Social proof post", "Friday: Eco-friendly packaging focus."*
 
-À quoi ça sert : Scanner les boutiques concurrentes.
-Cas d'usage E-commerce : Vous vendez des gourdes isothermes. Vous lancez la commande sur le site du leader de votre marché. L'outil vous montrera leurs meilleures offres (ils offrent les frais de port dès 50€), et vous proposera des stratégies pour vous différencier (par exemple, offrir un ebook gratuit sur la randonnée avec chaque gourde).
+**`/market competitors <url>`**
+Scan competitor websites and find differentiation opportunities.
+> *E-commerce example: You sell insulated water bottles. Run this on the market leader's site to reveal their best offers and get strategies to stand out.*
 
-5. Fidélisation et Séquences E-mails
-/market emails <sujet/url>
+### 5. Email & Retention
 
-À quoi ça sert : Rédiger entièrement les e-mails automatiques que reçoit le client.
-Cas d'usage E-commerce : C'est indispensable ! Vous demandez : "Crée une séquence de 3 e-mails de 'Récupération de Panier Abandonné' pour ma marque de bijoux". La commande va générer :
-L'e-mail envoyé 4h après ("Oups, vous avez oublié quelque chose ?")
-L'e-mail envoyé le lendemain (Preuve sociale + garantie)
-L'e-mail envoyé 48h après (Code promo -10% de dernière chance)
-/market launch <produit>
+**`/market emails <topic/url>`**
+Write complete automated email sequences.
+> *E-commerce example: "Create a 3-email abandoned cart sequence for my jewelry brand" → generates the 4-hour email, the next-day social proof email, and the 48-hour last-chance discount email.*
 
-À quoi ça sert : Créer le plan d'action pour sortir un nouveau produit.
-Cas d'usage E-commerce : Vous lancez une nouvelle saveur exclusive de compléments alimentaires sportifs en édition limitée. La commande vous fait le calendrier : comment teaser la "liste VIP" d'abord, quel e-mail envoyer le jour J de l'ouverture des ventes, et l'e-mail "Dernières heures" avant la rupture de stock.
+**`/market launch <product>`**
+Build the action plan for a new product release.
+> *E-commerce example: Launching a limited-edition supplement flavor? Get the full calendar: how to tease the VIP list first, what to send on launch day, and the "last hours" urgency email.*
 
-6. Agence et B2B (Optionnel pour l'UGC)
-Note : Ces deux commandes sont plus utiles si vous proposez des services, mais elles peuvent s'adapter.
+### 6. Agency & Reporting
 
-/market proposal <client> (Rare en e-commerce B2C)
+**`/market proposal <client>`**
+Generate a structured commercial proposal.
+> *B2B example: Selling wholesale to a distributor? The command generates the full pitch and structured quote to convince them to list your products.*
 
-À quoi ça sert : Faire une proposition commerciale.
-Cas d'usage E-commerce B2B : Vous essayez de vendre vos produits physiques en gros (Wholesale) à un revendeur physique ou un grand distributeur. La commande génère l'argumentaire complet et le devis structuré pour le convaincre de vous référencer.
-/market report <url> et /market report-pdf <url>
+**`/market report <url>` and `/market report-pdf <url>`**
+Generate a complete marketing report in Markdown or PDF.
+> *Use case: Share a professional, client-ready audit with partners or a new agency to brief them on your site's current state.*
 
-À quoi ça sert : Éditer un rapport global.
-Cas d'usage E-commerce : Réunir toutes les données pour faire un point avec vos associés, ou si vous engagez une agence de pub, pour leur donner un briefing complet sur l'état de votre site (les taux de conversion actuels, l'audit SEO, la stratégie, etc.).
+## ⚠️ Website Compatibility
 
-## Prérequis
+The Python scripts use a standard HTTP fetcher. They work well on most traditional websites but **will not work** on:
 
-- **Claude Code** installé et configuré
-- **Python 3.8+** pour les scripts d'analyse
-- **reportlab** (optionnel, pour les rapports PDF) : `pip install reportlab`
+| Site Type | Why It Fails |
+|-----------|-------------|
+| **Bot-protected sites** (Cloudflare, Expedia, Amazon) | Anti-bot systems block non-browser requests with 403 errors or CAPTCHAs |
+| **JavaScript-rendered SPAs** (React, Vue, Angular) | The fetcher gets an empty HTML shell — real content only loads via JS |
+| **Rate-limited / IP-blocked sites** | Enterprise sites block requests missing cookies or browser fingerprints |
 
-## Structure du projet
+**Works best on:** Traditional server-rendered websites (WordPress, PHP, static HTML), most SMB/agency/SaaS marketing sites.
+
+## Streamlit App
+
+A full browser UI is available in addition to the command-line scripts:
+
+```powershell
+pip install streamlit pandas
+streamlit run app.py
+```
+
+Opens at `http://localhost:8501` with 4 sections: Page Analyzer, Competitor Scanner, Social Calendar, and PDF Report Generator.
+
+## Prerequisites
+
+- **Claude Code** installed and configured
+- **Python 3.8+** for the analysis scripts
+- **reportlab** (optional, for PDF reports): `pip install reportlab`
+
+## Project Structure
 
 ```
 claude-mark2/
 ├── market/
-│   └── SKILL.md              # Orchestrateur principal
+│   └── SKILL.md              # Main orchestrator
 ├── skills/
-│   ├── market-audit/         # Audit marketing complet
-│   ├── market-brand/         # Voix de marque
-│   ├── market-copy/          # Copywriting optimisé
-│   ├── market-emails/        # Séquences d'emails
-│   ├── market-competitors/   # Analyse concurrentielle
-│   ├── market-social/        # Calendrier réseaux sociaux
-│   ├── market-funnel/        # Analyse du tunnel
-│   ├── market-ads/           # Campagnes publicitaires
-│   ├── market-proposal/      # Proposition commerciale
-│   ├── market-landing/       # CRO page d'atterrissage
-│   ├── market-launch/        # Plan de lancement
-│   ├── market-report/        # Rapport marketing (MD)
-│   ├── market-report-pdf/    # Rapport marketing (PDF)
-│   └── market-seo/           # Audit SEO
+│   ├── market-audit/         # Full marketing audit
+│   ├── market-brand/         # Brand voice
+│   ├── market-copy/          # Optimized copywriting
+│   ├── market-emails/        # Email sequences
+│   ├── market-competitors/   # Competitive analysis
+│   ├── market-social/        # Social media calendar
+│   ├── market-funnel/        # Funnel analysis
+│   ├── market-ads/           # Ad campaigns
+│   ├── market-proposal/      # Commercial proposal
+│   ├── market-landing/       # Landing page CRO
+│   ├── market-launch/        # Product launch plan
+│   ├── market-report/        # Marketing report (MD)
+│   ├── market-report-pdf/    # Marketing report (PDF)
+│   └── market-seo/           # SEO audit
 ├── agents/
-│   ├── market-content.md     # Agent contenu & message
-│   ├── market-conversion.md  # Agent optimisation conversion
-│   ├── market-competitive.md # Agent analyse concurrentielle
-│   ├── market-technical.md   # Agent technique & SEO
-│   └── market-strategy.md    # Agent stratégie & croissance
+│   ├── market-content.md     # Content & messaging agent
+│   ├── market-conversion.md  # Conversion optimization agent
+│   ├── market-competitive.md # Competitive analysis agent
+│   ├── market-technical.md   # Technical & SEO agent
+│   └── market-strategy.md    # Strategy & growth agent
 ├── scripts/
-│   ├── analyze_page.py       # Analyse de page web
-│   ├── competitor_scanner.py # Scanner de concurrents
-│   ├── social_calendar.py    # Générateur de calendrier social
-│   └── generate_pdf_report.py# Générateur de rapport PDF
+│   ├── analyze_page.py       # Web page analyzer
+│   ├── competitor_scanner.py # Competitor scanner
+│   ├── social_calendar.py    # Social calendar generator
+│   └── generate_pdf_report.py# PDF report generator
 ├── templates/
-│   ├── email-welcome.md      # Séquence email de bienvenue
-│   ├── proposal-template.md  # Modèle de proposition client
-│   ├── content-calendar.md   # Calendrier de contenu 30 jours
-│   └── launch-checklist.md   # Checklist de lancement produit
-├── install.sh                # Installateur
-├── uninstall.sh              # Désinstallateur
-└── requirements.txt          # Dépendances Python
+│   ├── email-welcome.md      # Welcome email sequence
+│   ├── proposal-template.md  # Client proposal template
+│   ├── content-calendar.md   # 30-day content calendar
+│   └── launch-checklist.md   # Product launch checklist
+├── app.py                    # Streamlit web UI
+├── install.sh                # Installer
+├── uninstall.sh              # Uninstaller
+└── requirements.txt          # Python dependencies
 ```
 
-## Fichiers générés
+## Generated Files
 
-Chaque commande crée un fichier de rapport dans votre répertoire de travail :
+Each command creates a report file in your working directory:
 
-| Commande | Fichier généré |
-|----------|----------------|
+| Command | Output File |
+|---------|-------------|
 | `/market audit` | `AUDIT-MARKETING.md` |
 | `/market brand` | `VOIX-DE-MARQUE.md` |
 | `/market copy` | `SUGGESTIONS-COPY.md` |
@@ -188,15 +205,15 @@ Chaque commande crée un fichier de rapport dans votre répertoire de travail :
 | `/market landing` | `ANALYSE-LANDING.md` |
 | `/market launch` | `PLAN-LANCEMENT.md` |
 | `/market report` | `RAPPORT-MARKETING.md` |
-| `/market report-pdf` | `RAPPORT-MARKETING-<domaine>.pdf` |
+| `/market report-pdf` | `RAPPORT-MARKETING-<domain>.pdf` |
 | `/market seo` | `AUDIT-SEO.md` |
 
-## Désinstallation
+## Uninstall
 
 ```bash
 bash uninstall.sh
 ```
 
-## Licence
+## License
 
-MIT License — voir [LICENSE](LICENSE)
+MIT License — see [LICENSE](LICENSE)
