@@ -1,19 +1,21 @@
-# claude-mark2 — AI Marketing Suite for Claude Code
+# AI Marketing Suite
 
-A complete suite of marketing skills, agents, and scripts designed for Claude Code.
+A complete suite of marketing skills, agents, scripts, and a Streamlit web UI designed for Claude Code.
+
+**GitHub:** https://github.com/mohcinemadkour/Marketing-Page-Analyzer
 
 ## Quick Install
 
 ```bash
-git clone https://github.com/mounra/ai-marketing.git
-cd ai-marketing
+git clone https://github.com/mohcinemadkour/Marketing-Page-Analyzer.git
+cd Marketing-Page-Analyzer
 bash install.sh
 ```
 
 Or in a single command from anywhere:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mounra/ai-marketing/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mohcinemadkour/Marketing-Page-Analyzer/main/install.sh | bash
 ```
 
 ## What Gets Installed
